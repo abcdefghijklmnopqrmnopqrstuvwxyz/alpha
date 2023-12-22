@@ -7,8 +7,8 @@ This project provides functionality for generating, evaluating, and cleaning var
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Inputs](#inputs)
+- [Usage](#usage)
 - [Other](#Other)
 
 ## Introduction
@@ -67,9 +67,9 @@ This project consists of several modules for working with timetables, including:
     "name": "<string>",
     "classroom": "<string>",
     "teacher": "<string>",
-    "storey": number,
-    "is_practice": True/False,
-    "is_profile_subject": True/False
+    "storey": <number>,
+    "is_practice": <True/False>,
+    "is_profile_subject": <True/False>
    },
    ```
 

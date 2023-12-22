@@ -43,11 +43,14 @@ This project consists of several modules for working with timetables, including:
 
 1. Show program help
 
-   `python{<version>} main.py -h`
+   ```bash
+   python{<version>} main.py -h
 
 2. Run program
 
-   `python{<version>} main.py {<parameters>}`
+   ```bash
+   python{<version>} main.py {<parameters>}
+   ```
 
    (Replace version and parameters with your actual values)
 
@@ -76,6 +79,7 @@ This project consists of several modules for working with timetables, including:
     "is_practice": {<True/False>},
     "is_profile_subject": {<True/False>}
    },
+   ```
 
    Where you replace placeholders with actual values
    
@@ -83,6 +87,7 @@ This project consists of several modules for working with timetables, including:
 
    ```bash
    "{<number>}": null,
+   ```
 
    Where you replace number with actual value
 
@@ -96,6 +101,7 @@ This project consists of several modules for working with timetables, including:
    10, 2, 6, 6, 7, 1, 12, 0, 0, 0
    14, 1, 10, 18, 4, 2, 16, 0, 0, 0
    0, 11, 11, 5, 8, 17, 17, 0, 0, 0
+   ```
 
    Where each number represents subject from previous section
 

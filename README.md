@@ -8,6 +8,7 @@ This project provides functionality for generating, evaluating, and cleaning var
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Inputs](#inputs)
 - [Other](#Other)
 
 ## Introduction
@@ -43,12 +44,14 @@ This project consists of several modules for working with timetables, including:
 1. Show program help
 
    ```bash
-   python{version} main.py -h
+   python{<version>} main.py -h
 
 2. Run program
 
    ```bash
-   python{version} main.py <parameters>
+   python{<version>} main.py {<parameters>}
+
+   (Replace version and parameters with your actual values)
 
 3. Output
 
@@ -57,6 +60,43 @@ This project consists of several modules for working with timetables, including:
       - Total evaluated timetables
       - Timetable count with better score than input
       - Best timetable evaluated 
+
+## Inputs
+
+1. Subjects
+
+   Program allows you to customize inputs such as timetable or subjects
+
+   To use your own timetable, you needs first to make list of subjects in JSON by program standards:
+
+   "{<number>}": {
+    "name": "{<string>}",
+    "classroom": "{<string>}",
+    "teacher": "{<string>}",
+    "storey": {<number>},
+    "is_practice": {<True/False>},
+    "is_profile_subject": {<True/False>}
+   },
+
+   Where you replace placeholders with actual values
+   
+   If you wints to make free hour, use this:
+
+   "{<number>}": null,
+
+   Where you replace number with actual value
+
+2. Timetable
+
+   Once your subjects sheel is ready, you can make simple timetable in CSV format, for example:
+
+   15, 15, 2, 3, 1, 0, 19, 19, 0, 0
+   1, 9, 13, 13, 5, 7, 0, 8, 0, 0
+   10, 2, 6, 6, 7, 1, 12, 0, 0, 0
+   14, 1, 10, 18, 4, 2, 16, 0, 0, 0
+   0, 11, 11, 5, 8, 17, 17, 0, 0, 0
+
+   Where each number represents subject from previous section
 
 ## Other
 

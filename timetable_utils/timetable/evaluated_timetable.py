@@ -16,7 +16,7 @@ class EvaluatedTimetable:
             TypeError: If the input types are not as expected.
         """
 
-        if not (isinstance(timetable, tuple) or isinstance(points, int) or isinstance(subjects, dict)):
+        if not isinstance(timetable, tuple) or not isinstance(points, int) or not isinstance(subjects, dict):
             raise TypeError
         self.timetable = timetable
         self.points = points
@@ -50,4 +50,4 @@ class EvaluatedTimetable:
                 formatted_row.append(formatted_subject)
             formatted.append(' | '.join(formatted_row))
 
-        return f'\n'.join(formatted)
+        return f'\n'.join(formatted) + f'\nPoints: {self.points}'

@@ -67,9 +67,9 @@ This project consists of several modules for working with timetables, including:
     "name": "<string>",
     "classroom": "<string>",
     "teacher": "<string>",
-    "storey": <number>,
-    "is_practice": <True/False>,
-    "is_profile_subject": <True/False>
+    "storey": number,
+    "is_practice": True/False,
+    "is_profile_subject": True/False
    },
    ```
 
@@ -95,7 +95,7 @@ This project consists of several modules for working with timetables, including:
 
    Once your subjects sheel is ready, you can make simple timetable in CSV format, for example:
 
-   ```csv
+   ```
    15, 15, 2, 3, 1, 0, 19, 19, 0, 0
    1, 9, 13, 13, 5, 7, 0, 8, 0, 0
    10, 2, 6, 6, 7, 1, 12, 0, 0, 0
